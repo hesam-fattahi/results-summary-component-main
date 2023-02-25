@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="component">
+        <section class="result">
+          <h1>Your Result</h1>
+          <div class="score__circle">
+            <p class="score__number">76</p>
+            <p class="socre__paragraph">of 100</p>
+          </div>
+          <h2>Great</h2>
+          <p class="result__paragraph">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+        <section class="summary">
+          <h2>Summary</h2>
+          <ul class="summary__list">
+            <li class="summary__item summary__item--red">
+              <img
+                src="./images/icon-reaction.svg"
+                class="item__icon"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="item__name item__name--red">Reaction</p>
+              <p class="item__score"><span>80</span> / 100</p>
+            </li>
+            <li class="summary__item summary__item--yellow">
+              <img
+                src="./images/icon-memory.svg"
+                class="item__icon"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="item__name item__name--yellow">Memory</p>
+              <p class="item__score"><span>92</span> / 100</p>
+            </li>
+            <li class="summary__item summary__item--teal">
+              <img
+                src="./images/icon-verbal.svg"
+                class="item__icon"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="item__name item__name--teal">Verbal</p>
+              <p class="item__score"><span>61</span> / 100</p>
+            </li>
+            <li class="summary__item summary__item--blue">
+              <img
+                src="./images/icon-visual.svg"
+                class="item__icon"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="item__name item__name--blue">Visual</p>
+              <p class="item__score"><span>72</span> / 100</p>
+            </li>
+          </ul>
+          <a href="#" class="btn">Continue</a>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
