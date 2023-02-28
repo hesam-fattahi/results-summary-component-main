@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Not available
+- Solution URL: [Result summary component | Frontend mentor](https://www.frontendmentor.io/solutions/result-summary-component-sass-bem-js-uIFIt3vfK8)
 - Live Site URL: [https://hesam-fattahi.github.io/results-summary-component-main/](https://hesam-fattahi.github.io/results-summary-component-main/)
 
 ### Built with
