@@ -145,7 +145,7 @@ ul {
 .item__name {
   flex: 1;
   font-weight: 800;
-  font-size: clamp(1rem, 0.762rem + 0.794vw, 1.125rem);
+  font-size: clamp(1rem, 0.76rem + 0.794vw, 1.125rem);
 }
 .item__name--red {
   color: hsl(0, 100%, 67%);
@@ -173,12 +173,15 @@ ul {
   display: block;
   text-decoration: none;
   border-radius: 50rem;
-  background-color: rgb(48, 59, 90);
+  background: rgb(48, 59, 90);
   color: #ffffff;
   padding: 1rem;
   text-align: center;
   font-size: 1.125rem;
   font-weight: 700;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #7857ff -20%, #2e2be9);
 }
 
 @media (max-width: 45.75rem) {

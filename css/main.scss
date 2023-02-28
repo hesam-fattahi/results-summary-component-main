@@ -9,6 +9,11 @@ $color-blue--gray: rgb(48, 59, 90);
 
 $color-white: #ffffff;
 
+$bg-gradient: linear-gradient(to bottom, #7857ff -20%, #2e2be9);
+
+$font-clamp--m: clamp(1.125rem, 0.411rem + 2.381vw, 1.5rem);
+$font-clamp--s: clamp(1rem, 0.76rem + 0.794vw, 1.125rem);
+
 @import "./reset";
 
 .container {
@@ -30,7 +35,7 @@ $color-white: #ffffff;
 }
 
 .result {
-  background: linear-gradient(to bottom, #7857ff -20%, #2e2be9);
+  background: $bg-gradient;
   color: $color-lavender;
   border-radius: 2rem;
   padding: 2rem 3.625rem 3rem;
@@ -41,7 +46,7 @@ $color-white: #ffffff;
   gap: 1.875rem;
 
   h1 {
-    font-size: clamp(1.125rem, 0.411rem + 2.381vw, 1.5rem);
+    font-size: $font-clamp--m;
   }
 
   h2 {
@@ -51,7 +56,7 @@ $color-white: #ffffff;
   }
 
   &__paragraph {
-    font-size: clamp(1rem, 0.76rem + 0.794vw, 1.125rem);
+    font-size: $font-clamp--s;
     line-height: 1.3;
     margin-top: -1.25rem;
   }
@@ -81,7 +86,7 @@ $color-white: #ffffff;
   padding: 1.875rem 2.5rem;
 
   h2 {
-    font-size: clamp(1.125rem, 0.411rem + 2.381vw, 1.5rem);
+    font-size: $font-clamp--m;
     margin-bottom: 1.75rem;
   }
 
@@ -121,7 +126,7 @@ $color-white: #ffffff;
   &__name {
     flex: 1;
     font-weight: 800;
-    font-size: clamp(1rem, 0.762rem + 0.794vw, 1.125rem);
+    font-size: $font-clamp--s;
 
     &--red {
       color: $color-red;
@@ -156,12 +161,16 @@ $color-white: #ffffff;
   display: block;
   text-decoration: none;
   border-radius: 50rem;
-  background-color: $color-blue--gray;
+  background: $color-blue--gray;
   color: $color-white;
   padding: 1rem;
   text-align: center;
   font-size: 1.125rem;
   font-weight: 700;
+
+  &:hover {
+    background: $bg-gradient;
+  }
 }
 
 @media (max-width: 45.75rem) {
