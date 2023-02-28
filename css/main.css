@@ -191,6 +191,11 @@ ul {
   .component {
     box-shadow: none;
     border-radius: 0;
+    height: 100%;
+  }
+  .summary {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 30rem) {
